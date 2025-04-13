@@ -1,0 +1,11 @@
+09.03.2025	22.38.50	1f956d52-4b3d-4022-ae1c-5cde78a5e110	TypeError: Cannot read properties of undefined (reading 'origin')	GET	/	undefined
+10.03.2025	12.40.02	68478a7f-6ad2-4d8f-952d-8f037eb0a889	TypeError: Cannot read properties of undefined (reading 'origin')	GET	/books	undefined
+10.03.2025	12.40.08	c9b651f7-d918-4bd5-8a0f-e32d6d8c77e4	TypeError: Cannot read properties of undefined (reading 'origin')	GET	/book	undefined
+10.03.2025	12.51.32	4e34a280-48f7-44e3-9fed-fafdf296e334	TypeError: Cannot read properties of undefined (reading 'origin')	GET	/	undefined
+10.03.2025	16.07.22	2c079619-7ea1-4021-8bb1-97dfb0bc1cea	SyntaxError: Unexpected token 'B', ..."ullName": Berra U,
+ "... is not valid JSON	POST	/api/books/register	undefined
+10.03.2025	16.08.15	edc6be41-bf89-44f9-a88a-454e54cc9def	SyntaxError: Expected double-quoted property name in JSON at position 48 (line 4 column 1)	POST	/api/books/register	undefined
+10.03.2025	16.08.37	cbba9041-a92c-4370-82fb-2be0af36c0de	SyntaxError: Expected double-quoted property name in JSON at position 48 (line 4 column 1)	POST	/api/users/register	undefined
+10.03.2025	16.08.42	374bcb33-8029-4437-84c6-2fea5e81e786	SyntaxError: Expected double-quoted property name in JSON at position 48 (line 4 column 1)	POST	/api/books/register	undefined
+10.03.2025	16.08.42	812900b0-4574-4b5f-81bb-0510c4eaa938	SyntaxError: Expected double-quoted property name in JSON at position 48 (line 4 column 1)	POST	/api/books/register	undefined
+10.03.2025	16.10.43	851bead4-8ac8-40e4-8f74-6a58764ac0cd	SyntaxError: Expected double-quoted property name in JSON at position 48 (line 4 column 1)	POST	/api/books/register	undefined
