@@ -1,17 +1,18 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 class Book {
   constructor() {
-    this.filePath = path.join(__dirname, '..', '..', 'data.json');
+  this.filePath = path.join(__dirname, "..", "data", "data.json");
   }
 
   readData() {
-    const jsonData = fs.readFileSync(this.filePath);
-    return JSON.parse(jsonData);
+    // Read all book data from file
+    return JSON.parse(fs.readFileSync(this.filePath));
   }
 
   writeData(books) {
+    // Write all book data to file
     fs.writeFileSync(this.filePath, JSON.stringify(books, null, 2));
   }
 
@@ -41,8 +42,7 @@ class Book {
 
   delete(id) {
     const books = this.readData();
-    const filteredBooks = books.filter((book) => book.id !== Number(id));
-    this.writeData(filteredBooks);
+    this.writeData(books.filter((book) => book.id !== Number(id)));
     return true;
   }
 }

@@ -1,15 +1,21 @@
 {
-  "name": "odev4",
+  "name": "book-express-api",
   "version": "1.0.0",
-  "description": "nodejs proje",
-  "main": "index.js",
+  "description": "Modern Node.js REST API for book and user management.",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "watch": "node --watch server.js"
+    "lint": "npx eslint src/ --ext .js",
+    "test": "echo \"No tests yet\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Berra Ugur",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BerraUgur/book-express-api.git"
+  },
+  "keywords": ["nodejs", "rest", "api", "jwt", "books", "users"],
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",

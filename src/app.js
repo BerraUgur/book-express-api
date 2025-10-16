@@ -1,7 +1,12 @@
+// Core modules
+const path = require("path");
+
+// Third-party modules
 const express = require("express");
 const cors = require("cors");
-const path = require("path");
 const cookieParser = require("cookie-parser");
+
+// Local modules
 const corsOptions = require("./config/corsConfig");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
@@ -10,21 +15,21 @@ const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 
-// Middleware
+// Global middleware
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(logger);
 
-// Routes
+// API routes
 app.use("/api/books", bookRoutes);
 app.use("/api/auth", authRoutes);
 
-// Static dosyalar
+// Serve static files
 app.use(express.static(path.join(__dirname, "views")));
 
-// Hata yakalama
+// Error handler middleware
 app.use(errorHandler);
 
 module.exports = app;
